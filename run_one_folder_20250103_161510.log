@@ -1,0 +1,50 @@
+[2025-01-03 16:15:10] -----------------------------------------------------------------
+[2025-01-03 16:15:10] Starting run_one_folder.sh
+[2025-01-03 16:15:10] Mother directory:          ../files_fastq
+[2025-01-03 16:15:10] Folder name:               E4T11
+[2025-01-03 16:15:10] Reference genome:          GCF_014131755.1_ASM1413175v1_genomic.fna
+[2025-01-03 16:15:10] Threads:                   16
+[2025-01-03 16:15:10] Current dir (TOP_DIR):     /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation
+[2025-01-03 16:15:10] Log file:                  /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/run_one_folder_20250103_161510.log
+[2025-01-03 16:15:10] SAM directory:             /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/SAM_files/
+[2025-01-03 16:15:10] BAM directory:             /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/BAM_files/
+[2025-01-03 16:15:10] Coverage directory:        /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/Coverage_files/
+[2025-01-03 16:15:10] -----------------------------------------------------------------
+[2025-01-03 16:15:10] 
+[2025-01-03 16:15:10] [E4T11] Starting: 1_map_reads_short_conda.sh
+Bowtie2 index for 'GCF_014131755.1_ASM1413175v1_genomic.fna' already exists. Skipping index building.
+Running Bowtie2 alignment...
+18469202 reads; of these:
+  18469202 (100.00%) were paired; of these:
+    6203584 (33.59%) aligned concordantly 0 times
+    12022409 (65.09%) aligned concordantly exactly 1 time
+    243209 (1.32%) aligned concordantly >1 times
+    ----
+    6203584 pairs aligned concordantly 0 times; of these:
+      46908 (0.76%) aligned discordantly 1 time
+    ----
+    6156676 pairs aligned 0 times concordantly or discordantly; of these:
+      12313352 mates make up the pairs; of these:
+        12209882 (99.16%) aligned 0 times
+        97980 (0.80%) aligned exactly 1 time
+        5490 (0.04%) aligned >1 times
+66.95% overall alignment rate
+Alignment finished. Output written to /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/SAM_files/E4T11_mapped.sam
+[2025-01-03 16:18:53] [E4T11] Finished: 1_map_reads_short_conda.sh
+[2025-01-03 16:18:53] [E4T11] Starting: 2_sort_bam_conda.sh
+error    libmamba Could not set lock (Resource temporarily unavailable)
+warning  libmamba Cannot lock '/home/rvalenciaaz/.cache/mamba/proc'
+    Waiting for other mamba process to finish
+[bam_sort_core] merging from 17 files and 1 in-memory blocks...
+Sorted BAM file created: /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/BAM_files/E4T11_sorted.bam
+[2025-01-03 16:23:41] [E4T11] Finished: 2_sort_bam_conda.sh
+[2025-01-03 16:23:41] [E4T11] Removed SAM file: /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/SAM_files/E4T11_mapped.sam
+[2025-01-03 16:23:41] [E4T11] Starting: 3_compute_coverage_conda.sh
+Coverage information written to: /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/Coverage_files/E4T11_coverage.txt
+[2025-01-03 16:23:48] [E4T11] Finished: 3_compute_coverage_conda.sh
+[2025-01-03 16:23:48] Completed pipeline for folder: E4T11
+[2025-01-03 16:23:48] BAM file:          /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/BAM_files/E4T11_sorted.bam
+[2025-01-03 16:23:48] Coverage file:     /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/Coverage_files/E4T11_coverage.txt
+[2025-01-03 16:23:48] 
+[2025-01-03 16:23:48] Script finished at: 2025-01-03 16:23:48
+[2025-01-03 16:23:48] -----------------------------------------------------------------

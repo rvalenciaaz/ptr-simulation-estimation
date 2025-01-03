@@ -1,0 +1,23 @@
+[2025-01-03 16:12:08] -----------------------------------------------------------------
+[2025-01-03 16:12:08] Starting run_one_folder.sh
+[2025-01-03 16:12:08] Mother directory:          ../files_fastq
+[2025-01-03 16:12:08] Folder name:               E4T11
+[2025-01-03 16:12:08] Reference genome:          GCF_014131755.1_ASM1413175v1_genomic.fna
+[2025-01-03 16:12:08] Threads:                   16
+[2025-01-03 16:12:08] Current dir (TOP_DIR):     /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation
+[2025-01-03 16:12:08] Log file:                  /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/run_one_folder_20250103_161208.log
+[2025-01-03 16:12:08] SAM directory:             /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/SAM_files/
+[2025-01-03 16:12:08] BAM directory:             /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/BAM_files/
+[2025-01-03 16:12:08] Coverage directory:        /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/Coverage_files/
+[2025-01-03 16:12:08] -----------------------------------------------------------------
+[2025-01-03 16:12:08] 
+[2025-01-03 16:12:08] [E4T11] Starting: 1_map_reads_short_conda.sh
+Bowtie2 index for 'GCF_014131755.1_ASM1413175v1_genomic.fna' already exists. Skipping index building.
+Running Bowtie2 alignment...
+
+EnvironmentLocationNotFound: Not a conda environment: /home/rvalenciaaz/miniconda3/envs/biotools
+
+Alignment finished. Output written to /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/SAM_files/E4T11_mapped.sam
+[2025-01-03 16:12:09] [E4T11] Finished: 1_map_reads_short_conda.sh
+[2025-01-03 16:12:09] ERROR: SAM file not created -> /home/rvalenciaaz/GIT_FOLDER/ptr-simulation-estimation/SAM_files/E4T11_mapped.sam
+[2025-01-03 16:12:09] Exiting...
